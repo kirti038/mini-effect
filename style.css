@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+ body{overflow-x: hidden;
+overflow-y: hidden;}
+
+
+ img{
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     z-index: 9999;
+      stroke-dashoffset: 10000px; 
+      stroke-dasharray: 10000px;
+      animation:   animation 10s  cubic-bezier(0.165, 0.84, 0.44, 1) both;
+      opacity: 0;
+      }
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    
+}
+
+.circule{
+    position: absolute;
+     z-index:99999999999999999 ;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%,50%);
+    border: 1.2px solid #fff;
+    mix-blend-mode: difference;
+     
+}
+#wrap h1{
+    
+    color: white;
+    font-size: 500px;
+    font-family: monospace;
+    
+}
+
+#wrap{
+    height: 100%;
+    width: 100%;
+    -webkit-text-fill-color: transparent;
+    background-image: url(https://media.istockphoto.com/id/1480979248/photo/business-partners-in-meeting.webp?b=1&s=170667a&w=0&k=20&c=2hKWPL98atOj-aDAm6nY40a2dddZ8y71DIoa8nlEdPc= );
+    background-position: 60%;
+
+     
+    background-size:  contain;
+    
+    -webkit-background-clip: text;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#white{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+      height: 140px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+       background-color: white;
+       transform: translate(-0%,-50%);
+}
+#black{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#black p{
+    color: white;
+       font-family: monospace;
+       padding: 35px;
+       line-height: 25px;
+       font-size: 15px;
+       text-align: center;
+
+}
+.linelem #line1{
+    height: 2px;
+    width: 200px;
+    background-color: black;
+    margin: 0px 30px;
+}
+.linelem{ display: flex;
+    align-items: center;
+  
+}
+.linelem h4{
+     font-family:'Courier New', Courier, monospace ;
+     font-size: 14px;
+}
+.linelem i{
+ cursor: pointer;
+   font-size: 20px;
+}
+
+.main>h5{
+    position: absolute;
+    color: white;
+     /* font-family: monospace; */
+     top: 50%;
+     text-transform: uppercase;
+     font-weight: 600;
+     letter-spacing: 15px;
+       font-size: 9px;
+       font-family: monospace;
+       transform: rotate(-90deg);
+
+}
+
+/* @keyframes animation{
+    to{
+        stroke-dasharray: 450;
+    }
+} */
+
